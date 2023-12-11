@@ -67,10 +67,11 @@ List of Dependencies
 ## CONTRIBUTERS:
 --------------------------------------------------
 
-NAME | E-MAIL                    | GITHUB
----  |---------------------------| ---
-Aygül Abilova | abilovaygul@gmail.com     |https://github.com/AyGulll
-Senol Dogan   | senoldogan2018@gmail.com  |https://github.com/DoganSenol
+NAME | E-MAIL                       | GITHUB
+---  |------------------------------| ---
+Aygül Abilova     | abilovaygul@gmail.com        |https://github.com/AyGulll
+Senol Dogan       | senoldogan2018@gmail.com     |https://github.com/DoganSenol
+M. Musab Mermer   | muhammedmermer2004@gmail.com |https://github.com/
 
 
 ---
