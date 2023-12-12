@@ -1,0 +1,146 @@
+package pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+import utilities.BaseDriver;
+
+public class header {
+
+    public header()
+    {
+        PageFactory.initElements(BaseDriver.getDriver(), this);
+    }
+
+    //////////////////////Aygül/////////////////////
+
+
+
+
+
+    ///////////////////Senol/////////////////////////
+
+
+
+
+
+
+    //////////////////////Musab///////////////////////
+
+
+
+
+
+
+
+
+
+
+    //////////////////////Göksah///////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //////////////////////Enes///////////////////////
+
+
+
+
+
+
+
+
+
+
+
+    //////////////////////Talat///////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+    //////////////////////Ümit///////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //////////////////////Talip///////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+    //////////////////////Sokol///////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //////////////////////Rustam///////////////////////
+
+
+
+
+
+
+
+
+
+
+    public WebElement getWebelement(String stringElement)
+    {switch (stringElement)
+    {
+
+
+
+
+    }
+
+        return null;
+    }
+
+
+
+}
