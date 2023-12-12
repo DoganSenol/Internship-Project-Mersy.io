@@ -1,0 +1,37 @@
+package stepDefinitions;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pages.loginPage;
+import utilities.BaseDriver;
+import utilities.ConfigurationReader;
+
+import java.io.IOException;
+
+public class LoginSteps extends ConfigurationReader {
+    loginPage lp= new loginPage();
+    @Given("Navigate to Website")
+    public void navigateToWebsite() throws IOException {
+        BaseDriver.getDriver().get(getUrl());
+    }
+
+    @And("Enter username that as {string} and password that as {string}")
+    public void enterUsernameThatAsAndPasswordThatAs(String username, String password) throws IOException {
+        lp.mySendKeys(lp.usernameInput,getUserName());
+        lp.mySendKeys(lp.passwordInput, getPassword());
+
+
+    }
+
+    @When("Click login Button")
+    public void clickLoginButton() {
+        lp.myClick(lp.loginButton);
+    }
+
+    @Then("Verify that student logged in")
+    public void verifyThatStudentLoggedIn() {
+        lp.verifyContainsText(lp.loginVerifyText, "Internship");
+    }
+}
