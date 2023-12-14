@@ -41,7 +41,8 @@ public class header {
     public WebElement profileButton;
     @FindBy(xpath = "//span[text()='Settings']")
     public WebElement settingsButton;
-
+    @FindBy(xpath = "//div[contains(text(),'successfully')]")
+    public WebElement successMessage;
 
     public WebElement getWebelement(String stringElement) {
         switch (stringElement) {
