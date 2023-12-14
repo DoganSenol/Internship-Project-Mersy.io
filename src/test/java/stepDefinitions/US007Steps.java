@@ -18,8 +18,8 @@ public class US007Steps {
 
     @Then("The student clicks on the move to trash button")
     public void theStudentClicksOnTheMoveToTrashButton() {
-        bd.myClick(bd.moveToTrashButton);
-        bd.myClick(bd.yesButton);
-        bd.verifyContainsText(bd.successfullyMessage, "success");
+        bd.myClick(bd.trashButton);
+        bd.myClick(bd.ConfirmButton);
+        hd.verifyContainsText(hd.successMessage, "success");
     }
 }

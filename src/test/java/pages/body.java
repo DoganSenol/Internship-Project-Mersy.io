@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.BaseDriver;
 
-public class body {
+public class body extends Methods{
 
     public body()
     {
@@ -19,6 +19,10 @@ public class body {
 
 
     ///////////////////Senol/////////////////////////
+
+    @FindBy(xpath="(//ms-confirm-button)[1]")
+    public WebElement trashButton;
+
 
 
 
