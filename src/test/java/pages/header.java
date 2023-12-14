@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.BaseDriver;
 
-public class header {
+public class header extends Methods{
 
     public header() {
         PageFactory.initElements(BaseDriver.getDriver(), this);
