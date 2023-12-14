@@ -46,3 +46,4 @@ build/
 /.idea/
 /Configuration/
 /src/resources/download/
+/src/resources/upload/
