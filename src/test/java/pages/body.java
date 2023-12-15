@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.BaseDriver;
 
+import java.util.List;
+
 public class body extends Methods{
 
     public body()
@@ -151,10 +153,21 @@ public class body extends Methods{
     @FindBy(xpath="//*[@class='stripe-img']")
     public WebElement stripePaymentsButton;
 
+    // Profile > Settings
+    @FindBy(xpath="//span[text()=' Settings']")
+    public WebElement settingsText;
 
+    @FindBy(xpath="//mat-select[@formcontrolname='theme']")
+    public WebElement themeDropbox;
 
+    @FindBy(xpath="//mat-option[@role='option']/span")
+    public List<WebElement> themeList;
 
+    @FindBy(xpath="//mat-toolbar[@class='mat-toolbar p-0 mat-primary mat-toolbar-single-row']")
+    public WebElement settingsToolbar;
 
+    @FindBy(xpath="//ms-save-button[@class='ng-star-inserted']")
+    public WebElement saveButton;
 
 
 
@@ -177,7 +190,6 @@ public class body extends Methods{
 
 
     //////////////////////Sokol///////////////////////
-
 
 
 
