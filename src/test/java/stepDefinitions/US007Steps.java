@@ -1,10 +1,12 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.http.Header;
 import pages.body;
 import pages.header;
+import utilities.BaseDriver;
 
 public class US007Steps {
     header hd=new header();
@@ -21,5 +23,18 @@ public class US007Steps {
         bd.myClick(bd.trashButton);
         bd.myClick(bd.ConfirmButton);
         hd.verifyContainsText(hd.successMessage, "success");
+
+    }
+
+    @When("The student clicks on the hamburger menu -> messaging menu -> Trash")
+    public void theStudentClicksOnTheHamburgerMenuMessagingMenuTrash() {
+        hd.myClick(hd.hamburgerMenu);
+        hd.myClick(hd.messagingButton);
+        hd.myClick(hd.trashButton);
+    }
+
+    @And("The student restore the messages")
+    public void theStudentRestoreTheMessages() {
+        bd.myClick(bd.checkBoxUs07);
     }
 }
