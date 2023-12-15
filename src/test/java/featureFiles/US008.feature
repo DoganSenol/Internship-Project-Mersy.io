@@ -1,7 +1,7 @@
 Feature: Payment via Finance Section
 
   As a student,
-  I want to make payments by accessing Finance from the Hamburger menu,
+  I want to make payments by accessing Finance from the Hamburger menu.
   So that I can conveniently manage my online payments.
 
   Background:
