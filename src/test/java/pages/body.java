@@ -22,6 +22,9 @@ public class body extends Methods{
 
     @FindBy(xpath="(//ms-confirm-button)[1]")
     public WebElement trashButton;
+    @FindBy(xpath="(//div[@class='mdc-checkbox'])[2]")
+    public WebElement checkBoxUs07;
+
 
 
 

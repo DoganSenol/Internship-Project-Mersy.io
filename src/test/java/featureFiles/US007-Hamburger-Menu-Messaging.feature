@@ -9,3 +9,8 @@ Feature: Move to trash and delete Messaging functionality
   Scenario: Student messages should be moved to the trash bin
     When The student clicks on the hamburger menu -> messaging menu -> Inbox
     Then The student clicks on the move to trash button
+
+  Scenario: Student restore the messages from the trash
+    When The student clicks on the hamburger menu -> messaging menu -> Trash
+    And The student restore the messages
+
