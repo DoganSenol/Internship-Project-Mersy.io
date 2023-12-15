@@ -11,8 +11,8 @@ public class hooks {
         System.out.println("The Scenario is started");
     }
 
-   // @After
-   // public void  after()
+    @After
+   public void  after()
     {
         System.out.println("The Scenario is finished");
         BaseDriver.quitDriver();
