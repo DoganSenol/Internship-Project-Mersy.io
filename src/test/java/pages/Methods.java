@@ -12,6 +12,8 @@ import org.testng.Assert;
 import utilities.BaseDriver;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Methods {
 
@@ -82,5 +84,13 @@ public class Methods {
         wait.until(ExpectedConditions.elementToBeClickable(element));
         Assert.assertTrue(element.isEnabled());
     }
+    public void verifyMenuItems(List<WebElement> elementList, List<String> stringList){
+        List<String> actualMenuTexts = new ArrayList<>();
+        for (WebElement menuItem : elementList){
+            actualMenuTexts.add(menuItem.getText());
+        }
+        Assert.assertEquals(actualMenuTexts,stringList);
+    }
+
 
 }
