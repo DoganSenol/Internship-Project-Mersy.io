@@ -233,6 +233,15 @@ public class body extends Methods {
 
 
     //////////////////////Rustam///////////////////////
+    @FindBy(xpath = "//span[text()='New Message']")
+    public WebElement newMessage;
+    @FindBy(xpath = "//span[contains(text(), 'New Message')]")
+    public WebElement newMessageText;
+    @FindBy(xpath = "//div[@style='padding-right: 16px; display: flex; justify-content: flex-end; align-items: center;']/button/span")
+    public WebElement button;
+
+
+
 
 
 
