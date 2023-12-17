@@ -12,8 +12,8 @@ Feature: Hamburger Menu
     Then  Verify that student logged in
 
   Scenario:  The student should be able to access the outgoing list
-    When the student click on the Hamburger Menu
-    And select  Messaging
+    When  the student click on the Hamburger Menu
+    And   select  Messaging
     Then  The student must have to click New Message
     Given The student must have to click Inbox
     When  The student must have to click Outbox

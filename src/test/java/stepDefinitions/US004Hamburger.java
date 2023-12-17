@@ -8,6 +8,9 @@ import pages.Methods;
 import pages.body;
 import pages.header;
 import utilities.BaseDriver;
+
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.time.Duration;
 
 public class US004Hamburger {
@@ -21,37 +24,50 @@ public class US004Hamburger {
         hp.myClick(hp.hamburgerMenu);
 
     }
+
     @And("select  Messaging")
     public void selectMessaging() {
         hp.myClick(hp.messagingButton);
 
     }
+
     @Then("The student must have to click New Message")
-    public void theStudentMustHaveToClickNewMessage() {
-       bp.myClick(bp.newMessage);
-       Assert.assertTrue(bp.newMessageText.getText().contains("New Message"), "False");
-       //bp.myClick(bp.button);
+    public void theStudentMustHaveToClickNewMessage() throws AWTException {
+        bp.myClick(bp.newMessage);
+        bp.verifyContainsText(bp.MessagingBoxText,"New Message");
+        new Robot().keyPress(KeyEvent.VK_TAB);
+        new Robot().keyRelease(KeyEvent.VK_TAB);
+
 
     }
+
     @Given("The student must have to click Inbox")
-    public void theStudentMustHaveToClickInbox() {
-        wait.until(ExpectedConditions.elementToBeClickable(hp.hamburgerMenu));
+    public void theStudentMustHaveToClickInbox() throws AWTException {
         hp.myClick(hp.hamburgerMenu);
         hp.myClick(hp.messagingButton);
         hp.myClick(hp.inboxButton);
+        bp.verifyContainsText(bp.MessagingBoxText,"Inbox");
+        new Robot().keyPress(KeyEvent.VK_TAB);
+        new Robot().keyRelease(KeyEvent.VK_TAB);
     }
+
     @When("The student must have to click Outbox")
-    public void theStudentMustHaveToClickOutbox() {
-        wait.until(ExpectedConditions.elementToBeClickable(hp.hamburgerMenu));
+    public void theStudentMustHaveToClickOutbox() throws AWTException {
         hp.myClick(hp.hamburgerMenu);
         mt.myClick(hp.messagingButton);
         bp.myClick(hp.outboxButton);
+        bp.verifyContainsText(bp.MessagingBoxText,"Outbox");
+        new Robot().keyPress(KeyEvent.VK_TAB);
+        new Robot().keyRelease(KeyEvent.VK_TAB);
     }
+
     @Then("The student must have to click Trash")
-    public void theStudentMustHaveToClickTrash() {
-        wait.until(ExpectedConditions.elementToBeClickable(hp.hamburgerMenu));
+    public void theStudentMustHaveToClickTrash() throws AWTException {
         hp.myClick(hp.hamburgerMenu);
         hp.myClick(hp.messagingButton);
         bp.myClick(hp.trashButton);
+        bp.verifyContainsText(bp.MessagingBoxText,"Trash");
+        new Robot().keyPress(KeyEvent.VK_TAB);
+        new Robot().keyRelease(KeyEvent.VK_TAB);
     }
- }
+}
