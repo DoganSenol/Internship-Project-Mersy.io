@@ -37,6 +37,40 @@ public class body extends Methods {
     public WebElement deleteIcon;
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement submitButton;
+    @FindBy(xpath = "//mat-button-toggle[@value='attendance-excuse']")
+    public WebElement attendanceExcuses;
+    @FindBy(xpath = "//ms-add-button//button")
+    public WebElement addButton;
+    @FindBy(xpath = "//span[@class='mat-calendar-body-cell-content mat-focus-indicator mat-calendar-body-selected']")
+    public  WebElement selectDayButton;
+    @FindBy(xpath = "//span[@class='mat-option-text']")
+    public List< WebElement> dayType;
+    @FindBy(xpath = " (//div[@cdk-overlay-origin]/div)[6]")
+    public WebElement arrowButton;
+    @FindBy(xpath = "//button[@aria-label='Open calendar']")
+    public WebElement openCalendar;
+    @FindBy(xpath = "//ms-textarea-field//textarea")
+    public WebElement textField;
+    @FindBy(xpath = "//ms-button[@icon='paperclip']")
+    public WebElement attachFiles;
+    @FindBy(xpath = "//ms-standard-button[@icon='hdd']//button[@role='menuitem']")
+    public WebElement fromLocalButton;
+    @FindBy(xpath = "//ms-button[@caption='GENERAL.BUTTON.SEND']")
+    public WebElement sendButton;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     //////////////////////Musab///////////////////////
