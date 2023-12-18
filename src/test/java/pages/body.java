@@ -239,6 +239,14 @@ public class body extends Methods {
     public WebElement MessagingBoxText;
     @FindBy(xpath = "//div[@style='padding-right: 16px; display: flex; justify-content: flex-end; align-items: center;']/button/span")
     public WebElement button;
+    @FindBy(xpath = "//*[@class='profile-image avatar huge ng-star-inserted']")
+    public WebElement upload_photo;
+    @FindBy(xpath = "//*[@class='svg-inline--fa fa-upload']")
+    public WebElement picture;
+    @FindBy(xpath = "//*[contains(text(), 'Upload')]")
+    public WebElement uploadButton;
+
+
 
 
 
