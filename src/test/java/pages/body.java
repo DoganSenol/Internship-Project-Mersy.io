@@ -298,6 +298,13 @@ public class body extends Methods {
                 return this.chatsWindow;
             case "profileButton":
                 return this.profileButton;
+                case "upload_photo":
+                return this.upload_photo;
+            case "picture":
+                return this.picture;
+            case "uploadButton":
+                return this.uploadButton;
+
 
         }
 

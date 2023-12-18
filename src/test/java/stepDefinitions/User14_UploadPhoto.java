@@ -4,6 +4,7 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pages.Methods;
@@ -48,10 +49,10 @@ public class User14_UploadPhoto {
     }
 
     @Then("choose the photo jpg")
-    public void chooseThePhotoJpg() throws AWTException {
-        StringSelection photoPath = new StringSelection("C:\\Users\\rusta\\Desktop\\thumb-1920-1332281.jpeg");
+    public void chooseThePhotoJpg() throws AWTException, InterruptedException {
+        StringSelection photoPath = new StringSelection("C:\\Users\\rusta\\Pictures\\thumb-1920-1332281.jpeg");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(photoPath, null);
-
+        Thread.sleep(2000);
         new Robot().keyPress(KeyEvent.VK_CONTROL);
         new Robot().keyPress(KeyEvent.VK_V);
         new Robot().keyRelease(KeyEvent.VK_CONTROL);
@@ -59,9 +60,10 @@ public class User14_UploadPhoto {
         new Robot().keyPress(KeyEvent.VK_ENTER);
         new Robot().keyRelease(KeyEvent.VK_ENTER);
         bp.myClick(bp.uploadButton);
+        Thread.sleep(2000);
         bp.myClick(bp.saveButton);
-        bp.verifyContainsText(bp.MessagingBoxText,"successfully");
-
-    }
+        Thread.sleep(1000);
+        bp.verifyContainsText(hp.successMessage,"successfully");
+     }
 }
 
