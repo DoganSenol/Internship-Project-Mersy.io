@@ -20,6 +20,10 @@ public class Methods {
     public WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(30));
 
     public JavascriptExecutor javascriptExecutor = (JavascriptExecutor) BaseDriver.getDriver();
+    public  void myClickWithoutScroll(WebElement element){
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+        element.click();
+    }
 
     public  void myClick(WebElement element){
         wait.until(ExpectedConditions.elementToBeClickable(element));
