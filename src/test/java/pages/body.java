@@ -122,6 +122,12 @@ public class body extends Methods {
     @FindBy(xpath = "//div[@id=\"mat-tab-label-11-0\"]") //yayınlanmış dersin üst kısmındaki buton
     public WebElement informationButton;
 
+    ////////////////////////Finance//////////////////////////
+    @FindBy(xpath = "(//ms-standard-button/button)[1]")
+    public WebElement eyeButton;
+    @FindBy(xpath = "(//div[@class='mdc-radio'])[5]")
+    public WebElement stripePayButton;
+
 
     //////////////////////Talat///////////////////////
     @FindBy(xpath = "(//ms-layout-menu-button//button)[1]")
