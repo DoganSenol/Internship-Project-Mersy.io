@@ -273,6 +273,14 @@ public class body extends Methods {
     public WebElement MessagingBoxText;
     @FindBy(xpath = "//div[@style='padding-right: 16px; display: flex; justify-content: flex-end; align-items: center;']/button/span")
     public WebElement button;
+    @FindBy(xpath = "//*[@class='profile-image avatar huge ng-star-inserted']")
+    public WebElement upload_photo;
+    @FindBy(xpath = "//*[@class='svg-inline--fa fa-upload']")
+    public WebElement picture;
+    @FindBy(xpath = "//*[contains(text(), 'Upload')]")
+    public WebElement uploadButton;
+
+
 
 
 
@@ -324,6 +332,13 @@ public class body extends Methods {
                 return this.chatsWindow;
             case "profileButton":
                 return this.profileButton;
+                case "upload_photo":
+                return this.upload_photo;
+            case "picture":
+                return this.picture;
+            case "uploadButton":
+                return this.uploadButton;
+
 
         }
 
