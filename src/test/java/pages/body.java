@@ -245,6 +245,31 @@ public class body extends Methods {
     public WebElement picture;
     @FindBy(xpath = "//*[contains(text(), 'Upload')]")
     public WebElement uploadButton;
+//user21
+    @FindBy(xpath = "//*[@class='mat-select-arrow ng-tns-c3082329526-93']")
+    public WebElement semesterButton;
+    @FindBy(xpath = "//*[text() = 'All ']")
+    public WebElement allButton;
+    @FindBy(xpath = "//*[@id='mat-select-2']/div/div[2]/div")
+    public WebElement statusButton;
+    @FindBy(xpath = "//*[@id='mat-option-2']/span")
+    public WebElement resultButton;
+    @FindBy(xpath = "//*[@class='svg-inline--fa fa-memo-circle-info']")
+    public WebElement homeworkicon;
+
+
+
+    //**** user25
+   // @FindBy(xpath = "//*[@id='container-3']/*//button[3]")
+    //*[@id="container-3"]/courses-calendar/div/ms-course-schedule-board/ms-browse/div/div/div/div[2]/button[1]/span[3]
+    @FindBy(xpath = "//*[@id='container-3']/courses-calendar/div/ms-course-schedule-board/ms-browse/div/div/div/div[2]/button[1]/span[3]")
+    public WebElement previousicon;
+    @FindBy(xpath = "//*[@class='mat-badge mat-badge-primary mat-badge-overlap mat-badge-below mat-badge-after mat-badge-small']")
+    public WebElement endedCourse;
+
+    @FindBy(xpath = "//*[@class='ng-star-inserted'][contains(text(), 'Recording')]")
+    public WebElement recordingButon;
+
 
 
 
