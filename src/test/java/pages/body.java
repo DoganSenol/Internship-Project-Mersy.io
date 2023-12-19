@@ -17,6 +17,32 @@ public class body extends Methods {
 
 
 
+    @FindBy(id ="mat-button-toggle-1-button" )
+    public WebElement courseGrade;
+    @FindBy(xpath= "//*[text()=' Course Name ']" )
+    public WebElement courseName;
+    @FindBy(xpath = "//span[contains(text(),'Student Transcript')]")
+    public WebElement studentTranscript;
+    @FindBy(xpath= "//*[text()=' Course Code ']" )
+    public WebElement courseCode;
+    @FindBy(xpath = "//span[contains(text(),'Transcript By Subject')]")
+    public WebElement transccriptSubject;
+    @FindBy(xpath= "//*[text()=' Subject '] " )
+    public WebElement subject;
+    @FindBy(xpath = "//div[@class='cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing']")
+    public WebElement discussionButton;
+
+   // @FindBy(xpath = "//div[@class='cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing']")
+   // public WebElement chatsButton;
+    @FindBy(xpath = "//button[@class='mat-mdc-button-touch-target']")
+    public WebElement contacts;
+    @FindBy(xpath = "//span[contains(text(),'Mark Zuckerberg')]")
+    public WebElement person;
+
+ // @FindBy(xpath = "//ms-icon-button[@class='ng-tns-c1298419688-99']//span[@class='mat-mdc-button-touch-target']")
+ // public WebElement AttachFiles;
+
+
 
 
 
