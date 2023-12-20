@@ -408,6 +408,9 @@ public class body extends Methods {
 
     @FindBy(xpath = "//*[@class='ng-star-inserted'][contains(text(), 'Recording')]")
     public WebElement recordingButon;
+    @FindBy(xpath = "//*[@class='vjs-play-control vjs-control vjs-button']")
+    public WebElement startButon;
+
 
 
 
