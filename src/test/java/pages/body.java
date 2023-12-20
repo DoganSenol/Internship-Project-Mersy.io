@@ -384,7 +384,7 @@ public class body extends Methods {
     public WebElement picture;
     @FindBy(xpath = "//*[contains(text(), 'Upload')]")
     public WebElement uploadButton;
-//user21
+    //user21
     @FindBy(xpath = "//*[@class='mat-select-arrow ng-tns-c3082329526-93']")
     public WebElement semesterButton;
     @FindBy(xpath = "//*[text() = 'All ']")
@@ -395,12 +395,16 @@ public class body extends Methods {
     public WebElement resultButton;
     @FindBy(xpath = "//*[@class='svg-inline--fa fa-memo-circle-info']")
     public WebElement homeworkicon;
+    @FindBy(xpath = " (//span[@class='mat-mdc-button-touch-target'])[24]")
+    public WebElement submitbutton;
+
+
+
 
 
 
     //**** user25
-   // @FindBy(xpath = "//*[@id='container-3']/*//button[3]")
-    //*[@id="container-3"]/courses-calendar/div/ms-course-schedule-board/ms-browse/div/div/div/div[2]/button[1]/span[3]
+
     @FindBy(xpath = "//*[@id='container-3']/courses-calendar/div/ms-course-schedule-board/ms-browse/div/div/div/div[2]/button[1]/span[3]")
     public WebElement previousicon;
     @FindBy(xpath = "//*[@class='mat-badge mat-badge-primary mat-badge-overlap mat-badge-below mat-badge-after mat-badge-small']")
@@ -410,6 +414,8 @@ public class body extends Methods {
     public WebElement recordingButon;
     @FindBy(xpath = "//*[@class='vjs-play-control vjs-control vjs-button']")
     public WebElement startButon;
+    @FindBy(css = " .assignment.ng-star-inserted ms-icon-button:nth-child(2)")
+    public List<WebElement> homeworklist;
 
 
 
@@ -465,12 +471,21 @@ public class body extends Methods {
                 return this.chatsWindow;
             case "profileButton":
                 return this.profileButton;
-                case "upload_photo":
+            case "upload_photo":
                 return this.upload_photo;
             case "picture":
                 return this.picture;
             case "uploadButton":
                 return this.uploadButton;
+            case "previousicon":
+                return this.previousicon;
+            case "endedCourse":
+                return this.endedCourse;
+            case "recordingButon":
+                return this.recordingButon;
+            case "startButon":
+                return this.startButon;
+
 
 
         }
@@ -481,7 +496,11 @@ public class body extends Methods {
         switch (stringList) {
             case "hamburgMenuList":
                 return this.hamburgMenuList;
-            case"profileButtonList": return this.profileButtonList;
+            case"profileButtonList":
+                return this.profileButtonList;
+            case"homeworklist":
+                return this.homeworklist;
+
         }
         return null;
     }
