@@ -21,7 +21,7 @@ public class body extends Methods {
     public WebElement courseName;
     @FindBy(xpath = "//span[contains(text(),'Student Transcript')]")
     public WebElement studentTranscript;
-    @FindBy(xpath= "//*[text()=' Course Code ']" )
+    @FindBy(xpath= "//*[@class='w-100-p']" )
     public WebElement courseCode;
     @FindBy(xpath = "//span[contains(text(),'Transcript By Subject')]")
     public WebElement transccriptSubject;
@@ -29,6 +29,10 @@ public class body extends Methods {
     public WebElement subject;
     @FindBy(xpath = "//div[@class='cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing']")
     public WebElement discussionButton;
+    @FindBy(id = "//div[@id='mat-select-value-3']")
+    public WebElement status;
+    @FindBy(xpath = "mat-select-min-line ng-tns-c3082329526-91 ng-star-inserted")
+    public WebElement published;
 
    // @FindBy(xpath = "//div[@class='cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing']")
    // public WebElement chatsButton;
