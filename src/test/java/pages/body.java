@@ -15,8 +15,6 @@ public class body extends Methods {
 
     //////////////////////Aygül/////////////////////
 
-
-
     @FindBy(id ="mat-button-toggle-1-button" )
     public WebElement courseGrade;
     @FindBy(xpath= "//*[text()=' Course Name ']" )
