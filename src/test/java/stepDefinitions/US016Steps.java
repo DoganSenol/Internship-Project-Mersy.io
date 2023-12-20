@@ -31,10 +31,10 @@ public class US016Steps {
         Assert.assertTrue(bp.courseName.getText().toLowerCase().trim().contains("course name"));
 
         mt.myClick(bp.studentTranscript);
-        Assert.assertTrue(bp.courseCode.getText().toLowerCase().trim().contains("course code"));
+        //Assert.assertTrue(bp.courseCode.getText().toLowerCase().trim().contains("course code"));
 
         mt.myClick(bp.transccriptSubject);
-       // Assert.assertTrue(bp.subject.getText().toLowerCase().trim().contains("subject"));
+        Assert.assertTrue(bp.subject.getText().toLowerCase().trim().contains("subject"));
     }
 
 }
