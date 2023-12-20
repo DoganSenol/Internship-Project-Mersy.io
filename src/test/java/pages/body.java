@@ -272,6 +272,33 @@ public class body extends Methods {
     @FindBy(xpath = "//ms-save-button[@class='ng-star-inserted']")
     public WebElement saveButton;
 
+    // Assignments > Semester dropbox
+    @FindBy(xpath = "(//mat-select[@role='combobox'])[3]")
+    public WebElement semesterDropbox;
+
+    @FindBy(xpath = "(//mat-option[@role='option'])[1]")
+    public WebElement all;
+
+    @FindBy(xpath = "//span[@fxlayout='row']/strong") //div[@class='assignment ng-star-inserted']
+    public List<WebElement> homeworkList;
+
+    @FindBy(xpath = "(//div[@class='assignment ng-star-inserted'])[1]//ms-icon-button")
+    public List<WebElement> firstHomeworkIconsList;
+
+    @FindBy(xpath = "(//div[@fxlayoutalign.lt-md='space-between center'])[1]")
+    public WebElement iconsPosition;
+
+    @FindBy(xpath = "(//div[@class='ng-star-inserted'])[10]")
+    public WebElement firstHomeworkPanel;
+
+    @FindBy(xpath = "//div[@class='mdc-tooltip__surface mdc-tooltip__surface-animation']")
+    public WebElement iconText;
+
+    @FindBy(xpath = "//span[text()=' Assignment ']")
+    public WebElement homeworkDetailsPage;
+
+    @FindBy(xpath = "(//button[@class='mat-mdc-tooltip-trigger mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base mat-mdc-tooltip-disabled'])[2]")
+    public WebElement homeworkDiscussionButton;
 
     //////////////////////Talip///////////////////////
 
