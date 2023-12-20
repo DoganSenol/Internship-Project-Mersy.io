@@ -155,6 +155,50 @@ public class body extends Methods {
     public WebElement eyeButton;
     @FindBy(xpath = "(//div[@class='mdc-radio'])[5]")
     public WebElement stripePayButton;
+    /////////////////MESSAGE///////////////
+    @FindBy(xpath = "(//ms-button[@class='ng-star-inserted']/button)[1]")
+    public WebElement receiversButton;
+    @FindBy(xpath = "(//div[@class='mdc-form-field'])[3]")
+    public WebElement receiversCheckbox;
+
+    @FindBy(xpath = "(//ms-button[@class='ng-star-inserted']/button)[4]")
+    public WebElement addCloseButton;
+
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='title']")
+    public WebElement subjectField;
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='title']/input")
+    public WebElement subjectTextField;
+
+    //span[text()=' New Message ']
+    @FindBy(xpath = "//span[text()=' New Message ']")
+    public WebElement newMessageText;
+
+    @FindBy(xpath = "//span[text()='Table']")
+    public WebElement tableButton;
+    @FindBy(xpath = "//div[text()='Table']")
+    public WebElement createTheTable;
+    @FindBy(xpath = "//div[@class='tox-insert-table-picker']/div[20]")
+    public WebElement tableRows;
+
+    @FindBy(xpath = "//body[@id='tinymce']/table")
+    public WebElement createdTable;
+
+    @FindBy(xpath = "//body[@id='tinymce']/p")
+    public WebElement messageTextArea;
+
+    @FindBy(xpath = "//div[text()='Delete table']")
+    public WebElement deleteTableButton;
+
+    @FindBy(xpath = "//span[text()='Attach Files...']")
+    public WebElement attachFilesButton;
+    @FindBy(xpath = "//span[text()='From Local']")
+    public WebElement msgFromLocalButton;
+    @FindBy(xpath = "//ms-button[@caption='USER_MESSAGES.BUTTONS.SEND']")
+    public WebElement msgSendButton;
+
+    @FindBy(xpath = "//div[text()='course notes']")
+    public WebElement outboxMessage;
+
 
 
     //////////////////////Talat///////////////////////
