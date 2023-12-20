@@ -10,7 +10,8 @@ public class homePage extends Methods{
     public homePage(){
         PageFactory.initElements(BaseDriver.getDriver(),this);}
 
-    @FindBy(xpath ="//img[@src='assets/images/logos/logo_icon_mini.png']")
+    @FindBy(xpath ="//div[@class='ng-star-inserted']//img")
+
     public WebElement logoButton;
 
 
