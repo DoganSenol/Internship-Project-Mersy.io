@@ -27,12 +27,14 @@ public class body extends Methods {
     public WebElement transccriptSubject;
     @FindBy(xpath= "//*[text()=' Subject '] " )
     public WebElement subject;
-    @FindBy(xpath = "//div[@class='cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing']")
+    @FindBy(xpath = "//div[@class='mat-form-field-infix ng-tns-c2794762957-92']")
+    public WebElement semester;
+   @FindBy(xpath = "//*[@id='mat-option-11']")
+    public WebElement all;
+ //   @FindBy(xpath = "//body/app/student-layout[@class='ng-star-inserted']/div/mat-drawer-container[@class='mat-drawer-container drawer-contener mat-drawer-container-explicit-backdrop']/mat-drawer-content[@class='mat-drawer-content']/div[@id='container-3']/ms-assignment-panel-student[@class='ng-star-inserted']/div/div[@class='table100 ver1 m-b-110']/div[@class='content']/div[@class='ps']/div[@class='ng-star-inserted']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]")
+ //   public WebElement project;
+    @FindBy(name = "(//ms-icon-button//button)[3]")
     public WebElement discussionButton;
-    @FindBy(id = "//div[@id='mat-select-value-3']")
-    public WebElement status;
-    @FindBy(xpath = "mat-select-min-line ng-tns-c3082329526-91 ng-star-inserted")
-    public WebElement published;
 
    // @FindBy(xpath = "//div[@class='cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing']")
    // public WebElement chatsButton;
@@ -40,6 +42,8 @@ public class body extends Methods {
     public WebElement contacts;
     @FindBy(xpath = "//span[contains(text(),'Mark Zuckerberg')]")
     public WebElement person;
+    @FindBy(xpath = "")
+    public WebElement notSuccesInfo;
 
  // @FindBy(xpath = "//ms-icon-button[@class='ng-tns-c1298419688-99']//span[@class='mat-mdc-button-touch-target']")
  // public WebElement AttachFiles;
