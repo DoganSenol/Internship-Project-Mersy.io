@@ -22,6 +22,7 @@ public class US020Steps {
     header hp = new header();
     body bp = new body();
     Methods mt = new Methods();
+
     public WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(15));
 
     @When("the student clicks on the Assignments")
@@ -70,7 +71,7 @@ public class US020Steps {
     }
     @When("The student clicks on any part of one of the homeworks item in the list")
     public void theStudentClicksOnAnyPartOfOneOfTheHomeworksItemInTheList() {
-        mt.myClick(bp.firstHomeworkPanel);
+        mt.myScriptClick(bp.firstHomeworkPanel);
     }
 
     @Then("Verify the student is directed to the homework details page")

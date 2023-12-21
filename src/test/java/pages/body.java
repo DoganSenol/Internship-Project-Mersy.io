@@ -436,6 +436,56 @@ public class body extends Methods {
     @FindBy(xpath = "(//button[@class='mat-mdc-tooltip-trigger mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base mat-mdc-tooltip-disabled'])[2]")
     public WebElement homeworkDiscussionButton;
 
+    // Assignments > Semester dropbox > Submit
+
+    @FindBy(xpath = "//ms-icon-button[@icon='file-import']")
+    public List<WebElement> submitButtonList;
+
+    @FindBy(xpath = "//span[contains(text(), ' Submission Attempt(s)')]")
+    public WebElement textEditorDialogBox;
+
+    @FindBy(xpath = "//span[text()='Submit']")
+    public WebElement textEditorSubmitButton;
+
+    @FindBy(xpath = "//*[@id='tinymce']") //body//p
+    public WebElement textEditor;
+
+    @FindBy(xpath = "//button[@role='menuitem']")
+    public List<WebElement> textEditorMenu;
+
+    @FindBy(xpath = "//div[@title='Image...']")
+    public WebElement image;
+
+    @FindBy(xpath = "//input[@type='url']")
+    public WebElement source;
+
+    @FindBy(xpath = "(//input[@type='text' and @tabindex='-1'])[1]")
+    public WebElement alternativeDescription;
+
+    @FindBy(xpath = "(//button[@title='Save'])[2]")
+    public WebElement pictureInsertSaveButton;
+
+    @FindBy(xpath = "//div[@title='Table']")
+    public WebElement table;
+
+    @FindBy(xpath = "//div[@role='button' and @aria-label='1 columns, 1 rows']")
+    public WebElement firstCell;
+
+    @FindBy(xpath = "//div[@role='button' and @aria-label='10 columns, 10 rows']")
+    public WebElement lastCell;
+
+    @FindBy(xpath = "//ms-standard-button[@icon='hdd']")
+    public WebElement myFromLocalButton;
+
+    @FindBy(xpath = "//ms-button[@icon='save']")
+    public WebElement saveAsDraftButton;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement yesButton;
+
+    @FindBy(xpath = "//span[text()='New Submission']")
+    public WebElement newSubmissionButton;
+
     //////////////////////Talip///////////////////////
 
 
