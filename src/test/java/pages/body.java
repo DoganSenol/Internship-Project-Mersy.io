@@ -31,13 +31,13 @@ public class body extends Methods {
     public WebElement semester;
    @FindBy(xpath = "//*[@id='mat-option-11']")
     public WebElement all;
- //   @FindBy(xpath = "//body/app/student-layout[@class='ng-star-inserted']/div/mat-drawer-container[@class='mat-drawer-container drawer-contener mat-drawer-container-explicit-backdrop']/mat-drawer-content[@class='mat-drawer-content']/div[@id='container-3']/ms-assignment-panel-student[@class='ng-star-inserted']/div/div[@class='table100 ver1 m-b-110']/div[@class='content']/div[@class='ps']/div[@class='ng-star-inserted']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]")
- //   public WebElement project;
-    @FindBy(xpath = "(//button[@matbadgecolor='accent'])[4]")
+   @FindBy(xpath = "//body/app/student-layout[@class='ng-star-inserted']/div/mat-drawer-container[@class='mat-drawer-container drawer-contener mat-drawer-container-explicit-backdrop']/mat-drawer-content[@class='mat-drawer-content']/div[@id='container-3']/ms-assignment-panel-student[@class='ng-star-inserted']/div/div[@class='table100 ver1 m-b-110']/div[@class='content']/div[@class='ps']/div[@class='ng-star-inserted']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]")
+   public WebElement project;
+    @FindBy(name = "(//ms-icon-button//button)[3]")
     public WebElement discussionButton;
 
-   // @FindBy(xpath = "//div[@class='cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing']")
-   // public WebElement chatsButton;
+   @FindBy(xpath = "//div[@class='cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing']")
+   public WebElement chatsButton;
     @FindBy(xpath = "//button[@class='mat-mdc-button-touch-target']")
     public WebElement contacts;
     @FindBy(xpath = "//span[contains(text(),'Mark Zuckerberg')]")
@@ -93,8 +93,8 @@ public class body extends Methods {
     public WebElement status1;
     @FindBy(xpath = "//mat-option[@id='mat-option-1']")
     public WebElement publishedCheckBox;
-    @FindBy(xpath = "//div[@id='mat-select-value-5']")
-    public WebElement semesteR;
+  //  @FindBy(xpath = "//div[@id='mat-select-value-5']")
+  //  public WebElement semester;
     @FindBy(xpath = "//mat-option[@value='all']")
     public WebElement alll;
     @FindBy(xpath = "//span[text()=' 11A- Biology '] ")
@@ -323,8 +323,8 @@ public class body extends Methods {
     public WebElement student_5Text;
     @FindBy(xpath = "//span[contains(.,' Messages')]")
     public WebElement messagesText;
-    @FindBy(xpath = "//div/user-chat-bell")
-    public WebElement chatsButton;
+ // @FindBy(xpath = "//div/user-chat-bell")
+ // public WebElement chatsButton;
     @FindBy(xpath = "//div/user-message-bell")
     public WebElement messageBoxButton;
     @FindBy(xpath = "//span[contains(.,' Student_5 11A - Mark Zuckerberg')]")
@@ -413,7 +413,7 @@ public class body extends Methods {
     public WebElement semesterDropbox;
 
     @FindBy(xpath = "(//mat-option[@role='option'])[1]")
-    public WebElement alL;
+    public WebElement getAlll;
 
     @FindBy(xpath = "//span[@fxlayout='row']/strong") //div[@class='assignment ng-star-inserted']
     public List<WebElement> homeworkList;
