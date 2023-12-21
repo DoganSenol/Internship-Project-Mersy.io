@@ -47,10 +47,12 @@ public class Methods {
         javascriptExecutor.executeScript("arguments[0].scrollIntoView();", element);
     }
 
+
     public void verifyContainsText(WebElement element, String value){
         wait.until(ExpectedConditions.textToBePresentInElement(element, value));
         Assert.assertTrue(element.getText().toLowerCase().contains(value.toLowerCase()));
     }
+
 
     public void myScriptClick(WebElement element){
         scrollToElement(element);
