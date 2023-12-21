@@ -85,6 +85,92 @@ public class body extends Methods {
     public WebElement fromLocalButton;
     @FindBy(xpath = "//ms-button[@caption='GENERAL.BUTTON.SEND']")
     public WebElement sendButton;
+    @FindBy(xpath = "//mat-select[@id='mat-select-2']")
+    public WebElement status1;
+    @FindBy(xpath = "//mat-option[@id='mat-option-1']")
+    public WebElement publishedCheckBox;
+    @FindBy(xpath = "//div[@id='mat-select-value-5']")
+    public WebElement semester;
+    @FindBy(xpath = "//mat-option[@value='all']")
+    public WebElement alll;
+    @FindBy(xpath = "//span[text()=' 11A- Biology '] ")
+    public WebElement biology;
+    @FindBy(xpath = "//div[@id='mat-select-value-1']")
+    public WebElement showAll;
+    @FindBy(xpath = "//span[text()=' 11A- Chemistry ']")
+    public WebElement chemistry;
+    @FindBy(xpath = "(//strong[text()='11A- Chemistry '])[1]")
+    public WebElement assertionChemistry;
+    @FindBy(xpath = "//span[text()=' 11A- Geometry ']")
+    public WebElement geometry;
+    @FindBy(xpath = "(//strong[text()='11A- Geometry '])[1]")
+    public WebElement assertionGeometry;
+    @FindBy(xpath = "//span[text()=' 11A-Dutch ']")
+    public WebElement dutch;
+    @FindBy(xpath = "(//strong[text()='11A-Dutch '])[1]")
+    public WebElement assertionDutch;
+    @FindBy(xpath = "//span[text()=' 11A-Mathematics ']")
+    public WebElement mathematics;
+    @FindBy(xpath = "(//strong[text()='11A-Mathematics '])[1]")
+    public WebElement assertionMathematics;
+    @FindBy(xpath = "//span[text()=' 11A-Physical ']")
+    public WebElement physical;
+    @FindBy(xpath = "//span[text()=' 11A-Spanish ']")
+    public WebElement spanish;
+    @FindBy(xpath = "(//strong[text()='11A-Spanish '])[1]")
+    public WebElement assertionSpanish;
+    @FindBy(xpath = "//span[text()=' 11A-Statistics ']")
+    public WebElement statistics;
+    @FindBy(xpath = "(//span[text()=' Published '])[1]")
+    public WebElement assertionPublished;
+
+    @FindBy(xpath = "//mat-option[@id='mat-option-2']")
+    public WebElement resultsPublishedCheckBox;
+    @FindBy(xpath = "(//span[text()=' Results Published '])[1]")
+    public WebElement assertionResultsPublished;
+    @FindBy(xpath = "(//span[@class='mat-option-text'])[2]")
+    public WebElement semester1;
+    @FindBy(xpath = "(//span[@class='mat-option-text'])[3]")
+    public WebElement semester2;
+    @FindBy(xpath = "(//span[@class='mat-option-text'])[1]")
+    public WebElement semesterAll;
+    @FindBy(xpath = "//span[@class='iso']")
+    public WebElement showBy;
+    @FindBy(xpath = "(//button[@tabindex='0'])[2]")
+    public WebElement defaultBy;
+    @FindBy(xpath = "(//button[@tabindex='0'])[3]")
+    public WebElement showByCourse;
+    @FindBy(xpath = "(//button[@tabindex='0'])[4]")
+    public WebElement showByType;
+    @FindBy(xpath = "(//button[@tabindex='0'])[5]")
+    public WebElement showByDate;
+    @FindBy(xpath = "(//button[@tabindex='0'])[6]")
+    public WebElement showByChart;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

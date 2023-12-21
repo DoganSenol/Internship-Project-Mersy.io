@@ -60,7 +60,7 @@ public class US013Steps {
             robot.keyRelease(KeyEvent.VK_TAB);
         }
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 7; i++) {
             robot.keyPress(KeyEvent.VK_DOWN);
             robot.keyRelease(KeyEvent.VK_DOWN);
         }
