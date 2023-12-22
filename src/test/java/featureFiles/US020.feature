@@ -1,4 +1,4 @@
-Feature: Verifying Assignments
+Feature: Verifying Assignments buttons
 
   As a student,
   There must be shortcut buttons on a randomly selected homework line from the list of duties on the Assignments
@@ -11,7 +11,7 @@ Feature: Verifying Assignments
     When  Click login Button
     Then  Verify that student logged in
 
-  Scenario: Verify icons in the homework line and homework details page
+  Scenario: Verify icons on the homework line and homework details page
     When the student clicks on the Assignments
     And selects All from the Semester dropbox
     Then the student views the list of homework items on the Assignments page
