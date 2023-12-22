@@ -273,8 +273,26 @@ public class body extends Methods {
 
     @FindBy(xpath = "//button[@role='menuitem']")
     public List<WebElement> profileButtonList;
-
-
+    @FindBy(xpath = "(//span[contains(.,'Weekly Course Plan')])[2]")
+    public WebElement weeklycoursePlanText;
+    @FindBy(xpath = "//span[contains(.,'Published')]")
+    public WebElement publishedText;
+    @FindBy(xpath = "//span[contains(.,'Started')]")
+    public WebElement startedText;
+    @FindBy(xpath = "//span[contains(.,'Ended')]")
+    public WebElement endedText;
+    @FindBy(xpath = "//span[contains(.,'Cancelled')]")
+    public WebElement cacelledText;
+    @FindBy(xpath = "(//button[contains(.,'Week')])[2]")
+    public WebElement weekText;
+    @FindBy(xpath = "//button[contains(.,'Month')]")
+    public WebElement monthText;
+    @FindBy(xpath = "//button[contains(.,'Day')]")
+    public WebElement dayText;
+    @FindBy(xpath = "//button[contains(.,'List')]")
+    public WebElement listText;
+    @FindBy(id = "mat-button-toggle-2-button")
+    public WebElement calendarPlanButton;
     @FindBy(xpath = "(//div[@class='mdc-radio'])[1]")
     public WebElement stripeRadio;
     @FindBy(xpath = "(//div[@class='mdc-radio'])[5]")
@@ -486,7 +504,26 @@ public class body extends Methods {
                 return this.startButon;
             case "eyeButton":
                 return this.eyeButton;
-
+            case "weeklycoursePlanText":
+                return this.weeklycoursePlanText;
+            case "publishedText":
+                return this.publishedText;
+            case"startedText":
+                return this.startedText;
+            case"endedText":
+                return this.endedText;
+            case "cacelledText":
+                return this.cacelledText;
+            case "calendarPlanButton":
+                return this.calendarPlanButton;
+            case"weekText":
+                return this.weekText;
+            case"monthText":
+                return this.monthText;
+            case"dayText":
+                return this.dayText;
+            case"listText":
+                return this.listText;
 
         }
 
