@@ -3,20 +3,15 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import pages.body;
-import pages.header;
-import utilities.BaseDriver;
+import pages.Body;
+import pages.Header;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
-import java.util.Collection;
 
 public class US022Steps {
-    body bd = new body();
-    header hd = new header();
+    Body bd = new Body();
+    Header hd = new Header();
 
     @When("The student clicks on Assignments Button")
     public void theStudentClicksOnAssignmentsButton() {

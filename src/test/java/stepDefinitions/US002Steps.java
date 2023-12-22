@@ -4,7 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.homePage;
+import pages.HomePage;
 import utilities.BaseDriver;
 import utilities.ConfigurationReader;
 
@@ -12,7 +12,7 @@ import java.time.Duration;
 
 public class US002Steps extends ConfigurationReader {
     public WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(15));
-  homePage hp=new homePage();
+  HomePage hp=new HomePage();
     @When("User must click on the logo")
     public void userMustClickOnTheLogo() {
 

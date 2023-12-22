@@ -8,15 +8,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pages.Methods;
-import pages.body;
-import pages.header;
+import pages.Body;
+import pages.Header;
 import utilities.BaseDriver;
 
 import java.time.Duration;
 
 public class US006Steps {
-    header hp = new header();
-    body bp = new body();
+    Header hp = new Header();
+    Body bp = new Body();
     Methods mt = new Methods();
     public WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(15));
     @When("the student clicks on the Hamburger Menu")

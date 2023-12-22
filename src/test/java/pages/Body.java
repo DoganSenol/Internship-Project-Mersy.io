@@ -7,9 +7,9 @@ import utilities.BaseDriver;
 
 import java.util.List;
 
-public class body extends Methods {
+public class Body extends Methods {
 
-    public body() {
+    public Body() {
         PageFactory.initElements(BaseDriver.getDriver(), this);
     }
 

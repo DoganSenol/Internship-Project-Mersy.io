@@ -7,9 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.Methods;
-import pages.body;
-import pages.header;
+import pages.Body;
+import pages.Header;
 import utilities.BaseDriver;
 
 import java.awt.*;
@@ -18,8 +17,8 @@ import java.time.Duration;
 
 public class US011Steps {
 
-    header hd = new header();
-    body bd = new body();
+    Header hd = new Header();
+    Body bd = new Body();
     public WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(15));
     @When("The student click on the Hamburger Menu")
     public void theStudentClickOnTheHamburgerMenu() {

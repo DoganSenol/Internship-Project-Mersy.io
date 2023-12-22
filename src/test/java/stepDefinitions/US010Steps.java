@@ -7,13 +7,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.body;
+import pages.Body;
 import utilities.BaseDriver;
 
 import java.time.Duration;
 
-public class US010 {
-    body el = new body();
+public class US010Steps {
+    Body el = new Body();
     public WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(),Duration.ofSeconds(20));
 
     @And("Click the eye")

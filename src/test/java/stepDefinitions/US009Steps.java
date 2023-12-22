@@ -9,16 +9,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import pages.body;
-import pages.header;
+import pages.Body;
+import pages.Header;
 import utilities.BaseDriver;
 
 import java.time.Duration;
 
-public class US09FinanceSteps {
+public class US009Steps {
     public WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(30));
-    header hd=new header();
-    body bd=new body();
+    Header hd=new Header();
+    Body bd=new Body();
 
 
     @Given("Student clicks on the finance section of the hamburger menu.")

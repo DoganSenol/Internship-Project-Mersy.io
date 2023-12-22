@@ -4,14 +4,14 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.loginPage;
+import pages.LoginPage;
 import utilities.BaseDriver;
 import utilities.ConfigurationReader;
 
 import java.io.IOException;
 
-public class LoginSteps extends ConfigurationReader {
-    loginPage lp= new loginPage();
+public class US001Steps extends ConfigurationReader {
+    LoginPage lp= new LoginPage();
     @Given("Navigate to Website")
     public void navigateToWebsite() throws IOException {
         BaseDriver.getDriver().get(getUrl());

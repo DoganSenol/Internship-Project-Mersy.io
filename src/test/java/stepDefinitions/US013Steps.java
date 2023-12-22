@@ -3,8 +3,8 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.body;
-import pages.header;
+import pages.Body;
+import pages.Header;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -12,8 +12,8 @@ import java.awt.event.KeyEvent;
 
 public class US013Steps {
 
-    header hd = new header();
-    body bd = new body();
+    Header hd = new Header();
+    Body bd = new Body();
 
     @When("The student clicks on the Attendance Button")
     public void theStudentClicksOnTheAttendanceButton() {

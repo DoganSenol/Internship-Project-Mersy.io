@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.BaseDriver;
 
-public class homePage extends Methods{
+public class HomePage extends Methods{
 
-    public homePage(){
+    public HomePage(){
         PageFactory.initElements(BaseDriver.getDriver(),this);}
 
     @FindBy(xpath ="//div[@class='ng-star-inserted']//img")

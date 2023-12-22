@@ -4,14 +4,14 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.body;
-import pages.header;
+import pages.Body;
+import pages.Header;
 
 
-public class US024CalendarSteps {
+public class US024Steps {
 
-    header hd = new header();
-    body bd = new body();
+    Header hd = new Header();
+    Body bd = new Body();
 
     @Given("Student click Calendar button")
     public void studentClickCalendarButton() {
