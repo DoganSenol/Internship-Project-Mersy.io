@@ -119,7 +119,6 @@ public class body extends Methods {
     public WebElement statistics;
     @FindBy(xpath = "(//span[text()=' Published '])[1]")
     public WebElement assertionPublished;
-
     @FindBy(xpath = "//mat-option[@id='mat-option-2']")
     public WebElement resultsPublishedCheckBox;
     @FindBy(xpath = "(//span[text()=' Results Published '])[1]")
@@ -142,6 +141,9 @@ public class body extends Methods {
     public WebElement showByDate;
     @FindBy(xpath = "(//button[@tabindex='0'])[6]")
     public WebElement showByChart;
+    @FindBy(xpath = "(//div[@class='ng-star-inserted'])[6]")
+    public WebElement studentFeesText;
+
 
 
     //////////////////////Musab///////////////////////
