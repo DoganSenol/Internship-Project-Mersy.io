@@ -20,6 +20,9 @@ public class LoginPage extends Methods {
     public WebElement loginButton;
     @FindBy(xpath = "((//div[@fxlayout='row'])[3]//span)[1]")
     public WebElement loginVerifyText;
+    @FindBy(xpath = "//div[text()='Invalid username or password']")
+    public WebElement invalidUserNamePassword;
+
 
 
 

@@ -15,7 +15,7 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
 
-public class US05Steps {
+public class US005Steps {
     Header hd = new Header();
     Body bd = new Body();
 
