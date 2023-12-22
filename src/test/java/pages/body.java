@@ -15,29 +15,29 @@ public class body extends Methods {
 
     //////////////////////Aygül/////////////////////
 
-    @FindBy(id ="mat-button-toggle-1-button" )
+    @FindBy(id = "mat-button-toggle-1-button")
     public WebElement courseGrade;
-    @FindBy(xpath= "//*[text()=' Course Name ']" )
+    @FindBy(xpath = "//*[text()=' Course Name ']")
     public WebElement courseName;
     @FindBy(xpath = "//span[contains(text(),'Student Transcript')]")
     public WebElement studentTranscript;
-    @FindBy(xpath= "//*[@class='w-100-p']" )
+    @FindBy(xpath = "//*[@class='w-100-p']")
     public WebElement courseCode;
     @FindBy(xpath = "//span[contains(text(),'Transcript By Subject')]")
     public WebElement transccriptSubject;
-    @FindBy(xpath= "//*[text()=' Subject '] " )
+    @FindBy(xpath = "//*[text()=' Subject '] ")
     public WebElement subject;
     @FindBy(xpath = "//div[@class='mat-form-field-infix ng-tns-c2794762957-92']")
     public WebElement semester;
-   @FindBy(xpath = "//*[@id='mat-option-11']")
+    @FindBy(xpath = "//*[@id='mat-option-11']")
     public WebElement all;
- //   @FindBy(xpath = "//body/app/student-layout[@class='ng-star-inserted']/div/mat-drawer-container[@class='mat-drawer-container drawer-contener mat-drawer-container-explicit-backdrop']/mat-drawer-content[@class='mat-drawer-content']/div[@id='container-3']/ms-assignment-panel-student[@class='ng-star-inserted']/div/div[@class='table100 ver1 m-b-110']/div[@class='content']/div[@class='ps']/div[@class='ng-star-inserted']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]")
- //   public WebElement project;
+    //   @FindBy(xpath = "//body/app/student-layout[@class='ng-star-inserted']/div/mat-drawer-container[@class='mat-drawer-container drawer-contener mat-drawer-container-explicit-backdrop']/mat-drawer-content[@class='mat-drawer-content']/div[@id='container-3']/ms-assignment-panel-student[@class='ng-star-inserted']/div/div[@class='table100 ver1 m-b-110']/div[@class='content']/div[@class='ps']/div[@class='ng-star-inserted']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]")
+    //   public WebElement project;
     @FindBy(xpath = "(//button[@matbadgecolor='accent'])[4]")
     public WebElement discussionButton;
 
-   // @FindBy(xpath = "//div[@class='cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing']")
-   // public WebElement chatsButton;
+    // @FindBy(xpath = "//div[@class='cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing']")
+    // public WebElement chatsButton;
     @FindBy(xpath = "//button[@class='mat-mdc-button-touch-target']")
     public WebElement contacts;
     @FindBy(xpath = "//span[contains(text(),'Mark Zuckerberg')]")
@@ -45,16 +45,8 @@ public class body extends Methods {
     @FindBy(xpath = "")
     public WebElement notSuccesInfo;
 
- // @FindBy(xpath = "//ms-icon-button[@class='ng-tns-c1298419688-99']//span[@class='mat-mdc-button-touch-target']")
- // public WebElement AttachFiles;
-
-
-
-
-
-
-
-
+    // @FindBy(xpath = "//ms-icon-button[@class='ng-tns-c1298419688-99']//span[@class='mat-mdc-button-touch-target']")
+    // public WebElement AttachFiles;
 
 
     ///////////////////Senol/////////////////////////
@@ -74,9 +66,9 @@ public class body extends Methods {
     @FindBy(xpath = "//ms-add-button//button")
     public WebElement addButton;
     @FindBy(xpath = "//span[@class='mat-calendar-body-cell-content mat-focus-indicator mat-calendar-body-selected']")
-    public  WebElement selectDayButton;
+    public WebElement selectDayButton;
     @FindBy(xpath = "//span[@class='mat-option-text']")
-    public List< WebElement> dayType;
+    public List<WebElement> dayType;
     @FindBy(xpath = " (//div[@cdk-overlay-origin]/div)[6]")
     public WebElement arrowButton;
     @FindBy(xpath = "//button[@aria-label='Open calendar']")
@@ -152,59 +144,7 @@ public class body extends Methods {
     public WebElement showByChart;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //////////////////////Musab///////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     //////////////////////Göksah///////////////////////
@@ -290,7 +230,6 @@ public class body extends Methods {
     public WebElement outboxMessage;
 
 
-
     //////////////////////Talat///////////////////////
     @FindBy(xpath = "(//ms-layout-menu-button//button)[1]")
     public WebElement coursesButton;
@@ -336,14 +275,22 @@ public class body extends Methods {
     public List<WebElement> profileButtonList;
 
 
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "(//div[@class='mdc-radio'])[1]")
+    public WebElement stripeRadio;
+    @FindBy(xpath = "(//div[@class='mdc-radio'])[5]")
+    public WebElement pay;
+    @FindBy(xpath = "//input[@data-placeholder='Amount']")
+    public WebElement inputAmount;
+    @FindBy(id = "Field-numberInput")
+    public WebElement inputCardNum;
+    @FindBy(id = "Field-expiryInput")
+    public WebElement inputExpiration;
+    @FindBy(id = "Field-cvcInput")
+    public WebElement inputCvc;
+    @FindBy(xpath = "//img[@class='stripe-img']")
+    public WebElement stripePayment;
+    @FindBy(xpath = "//div[contains(.,'Student Payment successfully created')]")
+    public WebElement paymentSuccessfully;
 
 
     //////////////////////Ümit///////////////////////
@@ -439,26 +386,7 @@ public class body extends Methods {
     //////////////////////Talip///////////////////////
 
 
-
-
-
-
-
-
-
     //////////////////////Sokol///////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     //////////////////////Rustam///////////////////////
@@ -489,10 +417,6 @@ public class body extends Methods {
     public WebElement submitbutton;
 
 
-
-
-
-
     //**** user25
 
     @FindBy(xpath = "//*[@id='container-3']/courses-calendar/div/ms-course-schedule-board/ms-browse/div/div/div/div[2]/button[1]/span[3]")
@@ -506,21 +430,6 @@ public class body extends Methods {
     public WebElement startButon;
     @FindBy(css = " .assignment.ng-star-inserted ms-icon-button:nth-child(2)")
     public List<WebElement> homeworklist;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     public WebElement getWebelement(String stringElement) {
@@ -575,20 +484,22 @@ public class body extends Methods {
                 return this.recordingButon;
             case "startButon":
                 return this.startButon;
-
+            case "eyeButton":
+                return this.eyeButton;
 
 
         }
 
         return null;
     }
+
     public List<WebElement> getWebelmentList(String stringList) {
         switch (stringList) {
             case "hamburgMenuList":
                 return this.hamburgMenuList;
-            case"profileButtonList":
+            case "profileButtonList":
                 return this.profileButtonList;
-            case"homeworklist":
+            case "homeworklist":
                 return this.homeworklist;
 
         }
