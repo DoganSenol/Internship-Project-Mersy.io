@@ -6,8 +6,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import pages.body;
-import pages.header;
+import pages.Body;
+import pages.Header;
 import utilities.BaseDriver;
 
 import java.awt.*;
@@ -16,8 +16,8 @@ import java.awt.event.KeyEvent;
 
 
 public class US05Steps {
-    header hd = new header();
-    body bd = new body();
+    Header hd = new Header();
+    Body bd = new Body();
 
     @Given("Student clicks on the Hamburger Menu, messaging and new message button")
     public void theStudentClicksOnTheHamburgerMenuMessagingAndNewMessageButton() {

@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.body;
+import pages.Body;
 import utilities.BaseDriver;
 
 import java.awt.*;
@@ -18,7 +18,7 @@ import java.util.Set;
 
 public class US017Steps {
 
-    body bd = new body();
+    Body bd = new Body();
 
     WebDriverWait wait=new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(20));
 

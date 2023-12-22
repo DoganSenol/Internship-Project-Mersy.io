@@ -3,14 +3,10 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.body;
-import utilities.BaseDriver;
-
-import java.time.Duration;
+import pages.Body;
 
 public class US023Steps {
-    body el = new body();
+    Body el = new Body();
 
     @And("the user should see the course statuses : Published \\(P), Started \\(S), Ended \\(E), Cancelled \\(C)")
     public void theUserShouldSeeTheCourseStatusesPublishedPStartedSEndedECancelledC() {

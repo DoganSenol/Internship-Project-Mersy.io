@@ -3,12 +3,11 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.pagefactory.FieldDecorator;
 import utilities.BaseDriver;
 
-public class loginPage extends Methods {
+public class LoginPage extends Methods {
 
-    public loginPage()
+    public LoginPage()
     {
         PageFactory.initElements(BaseDriver.getDriver(), this);
     }

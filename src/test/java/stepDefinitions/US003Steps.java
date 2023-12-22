@@ -2,14 +2,14 @@ package stepDefinitions;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.body;
+import pages.Body;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class US003 {
+public class US003Steps {
 
-    body el = new body();
+    Body el = new Body();
 
     @When("Click Coures Button")
     public void clickCouresButton() {

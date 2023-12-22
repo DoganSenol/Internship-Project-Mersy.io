@@ -4,12 +4,11 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pages.Methods;
-import pages.body;
-import pages.header;
+import pages.Body;
+import pages.Header;
 import utilities.BaseDriver;
 
 import java.awt.*;
@@ -17,9 +16,9 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.time.Duration;
 
-public class User14_UploadPhoto {
-    header hp = new header();
-    body bp = new body();
+public class US014Steps {
+    Header hp = new Header();
+    Body bp = new Body();
     Methods mt = new Methods();
     public WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(15));
 

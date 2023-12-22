@@ -8,15 +8,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.body;
-import pages.header;
+import pages.Body;
+import pages.Header;
 import utilities.BaseDriver;
 
 import java.time.Duration;
 
-public class US0025_CalendarVideo {
-    header hd = new header();
-    body bp = new body();
+public class US025Steps {
+    Header hd = new Header();
+    Body bp = new Body();
     public WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(15));
 
 
