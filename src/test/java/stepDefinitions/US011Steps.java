@@ -3,6 +3,9 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,6 +16,9 @@ import utilities.BaseDriver;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.time.Duration;
 
 public class US011Steps {
@@ -52,7 +58,7 @@ public class US011Steps {
     }
 
     @And("The student selects the payment method, enters the amount, inputs their credit card information, and completes the payment")
-    public void theStudentSelectsThePaymentMethodEntersTheAmountInputsTheirCreditCardInformationAndCompletesThePayment() throws AWTException {
+    public void theStudentSelectsThePaymentMethodEntersTheAmountInputsTheirCreditCardInformationAndCompletesThePayment() throws AWTException, IOException {
         bd.myScriptClick(bd.payRadio);
         bd.mySendKeys(bd.amountInput,"1.00");
         new Robot().keyPress(KeyEvent.VK_TAB);
@@ -63,9 +69,18 @@ public class US011Steps {
         WebElement iframe = BaseDriver.getDriver().findElement(By.xpath("//iframe[@title='Secure payment input frame']"));
         BaseDriver.getDriver().switchTo().frame(iframe);
 
-        bd.mySendKeys(bd.cardNumber,"4242 4242 4242 4242");
-        bd.mySendKeys(bd.expiration,"1223");
-        bd.mySendKeys(bd.cvc,"123");
+        String path="src/test/java/apachePOI/TestData.xlsx";
+        FileInputStream fileInputStream= new FileInputStream(path);
+        Workbook workbook= WorkbookFactory.create(fileInputStream);
+        Sheet sheet= workbook.getSheet("CampusBankData");
+        String cardNumber= String.valueOf(sheet.getRow(9).getCell(4));
+        String expiration= String.valueOf(sheet.getRow(10).getCell(5));
+        String cvc= String.valueOf(sheet.getRow(11).getCell(6));
+
+        bd.mySendKeys(bd.cardNumber, cardNumber);
+        bd.mySendKeys(bd.expiration, expiration);
+        bd.mySendKeys(bd.cvc, cvc);
+
         BaseDriver.getDriver().switchTo().parentFrame();
         bd.myScriptClick(bd.stripePaymentsButton);
     }
