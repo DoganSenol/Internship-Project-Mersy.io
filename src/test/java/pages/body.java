@@ -289,6 +289,9 @@ public class body extends Methods {
     @FindBy(xpath = "//div[text()='course notes']")
     public WebElement outboxMessage;
 
+    @FindBy(xpath = "//span[text()='Print']")
+    public WebElement printButton;
+
 
 
     //////////////////////Talat///////////////////////
