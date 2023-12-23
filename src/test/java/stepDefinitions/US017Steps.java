@@ -34,37 +34,20 @@ public class US017Steps {
     }
 
     @Then("Student click download button")
-    public void studentClickDownloadButton() throws InterruptedException {
+    public void studentClickDownloadButton() throws InterruptedException, AWTException {
 
-        Thread.sleep(2000);
+        Robot robot = new Robot();
+        robot.delay(2000);
 
-        Set<String> handles = BaseDriver.getDriver().getWindowHandles();
-        System.out.println("handles = " + handles);
-
-        Iterator<String> it = handles.iterator();
-        String parentWind = it.next();
-        System.out.println("parentWind = " + parentWind);
-        String childWind = it.next();
-        System.out.println("childWind = " + childWind);
-
-        BaseDriver.getDriver().switchTo().window(childWind);
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#viewer")));
-
-        WebElement element = BaseDriver.getDriver().findElement(By.cssSelector("pdf-viewer#viewer")).getShadowRoot()
-                .findElement(By.cssSelector("viewer-toolbar#toolbar")).getShadowRoot().findElement(By.cssSelector("viewer-download-controls#")).getShadowRoot()
-                .findElement(By.cssSelector("cr-icon-button#download"));
-        bd.myClick(element);
+        for (int i = 0; i < 8; i++) {
+            robot.keyPress(KeyEvent.VK_TAB);
+            robot.keyRelease(KeyEvent.VK_TAB);
         }
-
-
-
-        @And("Student must download successfully.")
-        public void studentMustDownloadSuccessfully () throws AWTException {
-        new Robot().keyRelease(KeyEvent.VK_CONTROL);
-            new Robot().keyRelease(KeyEvent.VK_V);
-            new Robot().keyPress(KeyEvent.VK_ENTER);
-            new Robot().keyRelease(KeyEvent.VK_ENTER);
+        for (int i = 0; i < 2; i++) {
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(2000);
+        }
         }
     }
 

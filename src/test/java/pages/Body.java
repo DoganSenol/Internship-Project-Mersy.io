@@ -21,11 +21,11 @@ public class Body extends Methods {
     public WebElement courseName;
     @FindBy(xpath = "//span[contains(text(),'Student Transcript')]")
     public WebElement studentTranscript;
-    @FindBy(xpath = "//*[@class='w-100-p']")
+    @FindBy(xpath = "(//th[@role='columnheader'])[2]")
     public WebElement courseCode;
     @FindBy(xpath = "//span[contains(text(),'Transcript By Subject')]")
-    public WebElement transccriptSubject;
-    @FindBy(xpath = "//*[text()=' Subject '] ")
+    public WebElement transcriptSubject;
+    @FindBy(xpath = "//*[text()=' Subject ']")
     public WebElement subject;
     @FindBy(xpath = "//div[@class='mat-form-field-infix ng-tns-c2794762957-92']")
     public WebElement semester;
@@ -455,6 +455,16 @@ public class Body extends Methods {
 
     @FindBy(xpath = "//span[text()='New Submission']")
     public WebElement newSubmissionButton;
+
+    // Finance > My Finance > Report
+    @FindBy(xpath = "(//button[@mat-ripple-loader-class-name='mat-mdc-button-ripple'])[22]")
+    public WebElement threeDotsIcon;
+
+    @FindBy(xpath = "(//div[@role='menu']//button)[1]")
+    public WebElement excelReport;
+
+    @FindBy(xpath = "(//div[@role='menu']//button)[2]")
+    public WebElement pdfReport;
 
     //////////////////////Talip///////////////////////
 

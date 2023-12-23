@@ -14,4 +14,3 @@ Feature: Grading Feature
     And Student can select Student Transcript
     When Student click on print button
     Then Student click download button
-    And Student must download successfully.
