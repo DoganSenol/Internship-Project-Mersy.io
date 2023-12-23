@@ -7,6 +7,7 @@ Feature: Grading Feature
     When  Click login Button
     Then  Verify that student logged in
 
+  @SmokeTest
   Scenario:
     When the evaluation page should be a link (Grading) that the student can access.
     Then the student can select Course Grade , Student Transcript,Transcript by Subject buttons

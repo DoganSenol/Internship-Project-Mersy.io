@@ -6,6 +6,7 @@ Feature: Attendance Excuses Functionality
     When  Click login Button
     Then  Verify that student logged in
 
+  @SmokeTest
   Scenario: The student uses the attendance system
     When  The student clicks on the Attendance Button
     And   The student clicks on the ATTENDANCE EXCUSES

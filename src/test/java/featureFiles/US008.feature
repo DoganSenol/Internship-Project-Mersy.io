@@ -10,6 +10,7 @@ Feature: Payment via Finance Section
     When  Click login Button
     Then  Verify that student logged in
 
+  @SmokeTest
   Scenario: Perform Safe Payment Process
     When the student clicks on the Hamburger Menu
     And selects Finance > My Finance
