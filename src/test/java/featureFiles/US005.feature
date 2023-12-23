@@ -5,6 +5,7 @@ Feature: As a student, I want to be able to send messages from Hamburger Menu.
     And   Enter username that as "username" and password that as "password"
     When  Click login Button
 
+  @RegressionTest
   Scenario: I want to be able to send messages from Hamburger Menu
     Given Student clicks on the Hamburger Menu, messaging and new message button
     When Student clicks on the receivers button and selects receivers

@@ -7,6 +7,7 @@ Feature: Assignments Feature
     When  Click login Button
     Then  Verify that student logged in
 
+  @RegressionTest
   Scenario:
     When the student clicks on the assignments page->discussion
     Then the student should see and be able to click on an icon Chats

@@ -7,6 +7,7 @@ Feature: Payment Functionality
     When  Click login Button
     Then  Verify that student logged in
 
+  @RegressionTest
   Scenario: The student must pay the remaining installments from the student payment section securely
     When The student click on the Hamburger Menu
     Then The student click on the Finance -> My Finance

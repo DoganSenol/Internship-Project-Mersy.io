@@ -12,6 +12,7 @@ Feature: Upload a homework in the Assignments
     When  Click login Button
     Then  Verify that student logged in
 
+  @RegressionTest
   Scenario: Verify icons on the homework line and homework details page
     When the student clicks on the Assignments
     And selects All from the Semester dropbox

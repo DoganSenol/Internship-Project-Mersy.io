@@ -59,7 +59,7 @@ List of Dependencies
 |           |-- .gitignore
 |
 |-- .gitignore
-|-- pom.xml
+|-- pom.xmlTestRunner
 
 ```
 

@@ -6,8 +6,8 @@ Feature: Payment Balance Update
     When  Click login Button
     Then  Verify that student logged in
 
+  @SmokeTest
   Scenario: Verify balance update after making payment
-
     When Click Hamburg button
     And selects Finance > My Finance
     And Click the eye

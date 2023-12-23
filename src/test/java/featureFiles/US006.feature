@@ -10,6 +10,7 @@ Feature: Deleting Messages from Outbox
     When  Click login Button
     Then  Verify that student logged in
 
+  @SmokeTest
   Scenario: Access Outbox from Hamburger Menu
     When the student clicks on the Hamburger Menu
     And selects Messaging > Outbox

@@ -11,6 +11,7 @@ Feature: Upload Photo for Student Profile
     When  Click login Button
     Then  Verify that student logged in
 
+  @RegressionTest
   Scenario: Accessing To Profile Settings
     When Student clicks on the Profile
     And Student selects Settings

@@ -11,6 +11,7 @@ Feature: Hamburger Menu
     When  Click login Button
     Then  Verify that student logged in
 
+    @SmokeTest
   Scenario:  The student should be able to access the outgoing list
     When  the student click on the Hamburger Menu
     And   select  Messaging

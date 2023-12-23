@@ -11,6 +11,7 @@ Feature: Verifying Assignments buttons
     When  Click login Button
     Then  Verify that student logged in
 
+  @SmokeTest
   Scenario: Verify icons on the homework line and homework details page
     When the student clicks on the Assignments
     And selects All from the Semester dropbox

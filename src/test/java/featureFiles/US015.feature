@@ -10,11 +10,11 @@ Feature: Theme Options for Student Profile
     When  Click login Button
     Then  Verify that student logged in
 
+  @SmokeTest
   Scenario: Accessing Profile Settings
     When the student clicks on the Profile
     And selects Settings
     Then the student should be directed to the Settings section
-
     When the student clicks Default Theme dropbox and verifies that there are more than three themes
     And the student selects one of the themes clicks on the save button and verifies theme of the page
     Then a success message should appear confirming the process
