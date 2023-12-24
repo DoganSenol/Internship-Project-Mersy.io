@@ -91,7 +91,7 @@ public class US021Steps {
         mt.myClick(bp.textEditorMenu.get(8));
         mt.myClick(bp.myFromLocalButton);
 
-        StringSelection filePath = new StringSelection("C:\\Users\\user\\Desktop\\sdlc-vs-stlc.png");
+        StringSelection filePath = new StringSelection("src/resources/upload/sdlc-vs-stlc.png");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filePath, null);
         Thread.sleep(2000);
         new Robot().keyPress(KeyEvent.VK_CONTROL);
