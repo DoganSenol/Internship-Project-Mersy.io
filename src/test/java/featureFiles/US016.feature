@@ -8,7 +8,7 @@ Feature: Grading Feature
     Then  Verify that student logged in
 
   @RegressionTest
-  Scenario:
+  Scenario: Grading Scenario
     When the evaluation page should be a link (Grading) that the student can access.
     Then the student can select Course Grade , Student Transcript,Transcript by Subject buttons
 
