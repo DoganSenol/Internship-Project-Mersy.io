@@ -34,16 +34,15 @@ List of Dependencies
 |   |-- test
 |       |-- java
 |           |-- ApachePOI
-|           |-- FeatureFiles
+|           |-- featureFiles
 |               |-- Feature Files
-|           |-- Pages
-|               |-- DialogPage, LeftBar, Methods
-|           |-- Runners
-|               |-- TestRunnerAll
-|               |-- TestRunnerHR
-|               |-- TestRunnerLogin
-|               |-- TestRunnerRegression
-|               |-- TestRunnerSmoke
+|           |-- pages
+|               |-- Body, Header, LoginPage, Methods
+|           |-- runners
+|               |-- AllTestRunner
+|               |-- ParallelTestRunner
+|               |-- RegressionTestRunner
+|               |-- SmokeTestRunner
 |           |-- StepDefinitions
 |               |-- Hooks
 |               |-- * Test Class Files
@@ -66,17 +65,13 @@ List of Dependencies
 ## CONTRIBUTERS:
 --------------------------------------------------
 
-| NAME                | E-MAIL                       | GITHUB                                 |
-|---------------------|------------------------------|----------------------------------------|
-| Aygül Abilova       | abilovaygul@gmail.com        | https://github.com/AyGulll             |
-| Senol Dogan         | senoldogan2018@gmail.com     | https://github.com/DoganSenol          |
-| M. Musab Mermer     | muhammedmermer2004@gmail.com | https://github.com/Musab29             |
-| E. Göksah Kiziltepe | e.goksahkiziltepe@gmail.com  | https://github.com/goksahkiziltepe     |
-| Enes Büke           | enes.buke12@gmail.com        | https://github.com/enesbuke            |
-| Talat Aihemaijiang  | javauchun@gmail.com          | https://github.com/TailaitiAihemaijang |
-| Ümit Boyraz         | iuboyraz@gmail.com           | https://github.com/iuboyraz            |
-| Talip Özkurt        | ozkurtalip@gmail.com         | https://github.com/tozkurt             |
-| Sokol Rrustemi      | sokolrrustemi@gmail.com      | https://github.com/sokolrrustemi       |
-| Rustam Roz          | rustamrozik626@gmail.com     | https://github.com/rustem626           |
+| NAME               | E-MAIL                   | GITHUB                                 |
+|--------------------|--------------------------|----------------------------------------|
+| Aygül Abilova      | abilovaygul@gmail.com    | https://github.com/AyGulll             |
+| Senol Dogan        | senoldogan2018@gmail.com | https://github.com/DoganSenol          |
+| Enes Büke          | enes.buke12@gmail.com    | https://github.com/enesbuke            |
+| Talat Aihemaijiang | javauchun@gmail.com      | https://github.com/TailaitiAihemaijang |
+| Ümit Boyraz        | iuboyraz@gmail.com       | https://github.com/iuboyraz            |
+| Rustam Roz         | rustamrozik626@gmail.com | https://github.com/rustem626           |
 
 ---
