@@ -466,6 +466,11 @@ public class Body extends Methods {
     @FindBy(xpath = "(//div[@role='menu']//button)[2]")
     public WebElement pdfReport;
 
+    // Assignments
+
+    @FindBy(xpath = "//div[@class='mdc-tooltip__surface mdc-tooltip__surface-animation']")
+    public WebElement assignmentsTaskAmount;
+
     //////////////////////Talip///////////////////////
 
 

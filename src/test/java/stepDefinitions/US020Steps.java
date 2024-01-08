@@ -36,7 +36,7 @@ public class US020Steps {
         Thread.sleep(2000);
         Assert.assertTrue(bp.homeworkList.size()>0, "There is no any assigned homework");
         for (int i = 0; i < bp.homeworkList.size(); i++) {
-            System.out.println(bp.homeworkList.get(i).getText());
+            System.out.println((i+1) + ".Task: " + bp.homeworkList.get(i).getText());
         }
     }
 
