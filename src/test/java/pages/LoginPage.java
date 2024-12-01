@@ -16,7 +16,7 @@ public class LoginPage extends Methods {
     public WebElement usernameInput;
     @FindBy(xpath = "//div//input[@formcontrolname='password']")
     public WebElement passwordInput;
-    @FindBy(xpath = "//button[@aria-label='LOGIN']")
+    @FindBy(xpath = "//span[text()=' LOGIN ']")
     public WebElement loginButton;
     @FindBy(xpath = "((//div[@fxlayout='row'])[3]//span)[1]")
     public WebElement loginVerifyText;

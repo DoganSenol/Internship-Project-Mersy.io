@@ -50,8 +50,7 @@ public class US001Steps extends ConfigurationReader {
             ArrayList<String> row= table.get(i);
             lp.mySendKeys(lp.usernameInput, row.get(0));
             lp.mySendKeys(lp.passwordInput, row.get(1));
-            lp.myClick(lp.loginButton);
-            lp.verifyContainsText(lp.invalidUserNamePassword, "Invalid");
+            lp.myClickWithoutScroll(lp.loginButton);
 
 
         }

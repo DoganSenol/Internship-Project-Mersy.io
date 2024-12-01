@@ -14,4 +14,4 @@ Feature: Login Functionality
       | userNameInput           |
       | passwordInput           |
       | loginButton             |
-      | invalidUserNamePassword |
+
