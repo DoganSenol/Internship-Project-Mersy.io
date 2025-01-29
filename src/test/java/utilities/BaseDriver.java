@@ -39,7 +39,7 @@ public class BaseDriver {
                     threadDriver.set(new EdgeDriver());
                     break;
                 default:
-                    ChromeOptions options = new ChromeOptions();
+                  /*  ChromeOptions options = new ChromeOptions();
                     options.addArguments("--disable-extensions");
                     options.addArguments("--start-maximized");
                     options.addArguments("--disable-infobars");
@@ -48,9 +48,9 @@ public class BaseDriver {
                     options.addArguments("--no-sandbox");
                     options.addArguments("--disable-dev-shm-usage");
                     options.addArguments("--remote-allow-origins=*");
-                    options.addArguments("--disable-search-engine-choice-screen"); // Bu satır eklendi
+                    options.addArguments("--disable-search-engine-choice-screen"); // Bu satır eklendi*/
 
-                    threadDriver.set(new ChromeDriver(options));
+                    threadDriver.set(new ChromeDriver());
                     break;
             }
         }

@@ -66,9 +66,9 @@ public class US003Steps {
         el.myClick(el.hamburgerMenu);
     }
 
-    @Then("Should see Messaging,Finance,Education,Video Conference,Surveyd")
-    public void shouldSeeMessagingFinanceEducationVideoConferenceSurveyd() {
-        List<String> stringList = Arrays.asList("Messaging", "Finance", "Education", "Video Conference", "Surveys");
+    @Then("Should see Messaging,Finance,Attendance,Video Conference,Surveyd")
+    public void shouldSeeMessagingFinanceAttendanceVideoConferenceSurveyd() {
+        List<String> stringList = Arrays.asList("Messaging", "Finance", "Attendance", "Video Conference", "Surveys");
         el.verifyMenuItems(el.hamburgMenuList, stringList);
 
     }

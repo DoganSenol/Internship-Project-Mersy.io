@@ -33,7 +33,7 @@ Feature:Feature buttons on homepage
   @RegressionTest
   Scenario: Check Hamburg Button
     When Click Hamburg button
-    Then Should see Messaging,Finance,Education,Video Conference,Surveyd
+    Then Should see Messaging,Finance,Attendance,Video Conference,Surveyd
 
   @RegressionTest
   Scenario: Check Chats Button

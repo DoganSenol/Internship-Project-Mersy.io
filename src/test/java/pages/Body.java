@@ -144,6 +144,12 @@ public class Body extends Methods {
     @FindBy(xpath = "(//div[@class='ng-star-inserted'])[6]")
     public WebElement studentFeesText;
 
+    @FindBy(xpath = "//a[@href='#submenu:programs']")
+    public WebElement programs;
+
+
+
+
 
 
     //////////////////////Musab///////////////////////
@@ -246,7 +252,7 @@ public class Body extends Methods {
     public WebElement assignmentsButton;
     @FindBy(xpath = "(//ms-layout-menu-button//button)[5]")
     public WebElement gradingButton;
-    @FindBy(xpath = "//button[@class='mat-mdc-menu-trigger mat-button-wrapper mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base']")
+    @FindBy(xpath = "(//span[@class='ng-star-inserted'])[1]")
     public WebElement hamburgerMenu;
     @FindBy(xpath = "//span[text()='Messaging']")
     public WebElement messagingButton;
@@ -594,6 +600,8 @@ public class Body extends Methods {
                 return this.dayText;
             case"listText":
                 return this.listText;
+            case"programs":
+                return this.programs;
 
         }
 
